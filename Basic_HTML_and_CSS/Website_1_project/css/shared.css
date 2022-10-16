@@ -209,7 +209,7 @@ section {
 }
 
 .reservation {
-    width: 60%;
+    width: 70%;
     padding: 5px;
     border-radius: 8px;
     margin: 0px auto;
@@ -240,13 +240,57 @@ section {
     word-spacing: 0.3pt;
 }
 
+.reservation p {
+    color: #13161b;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.reservation form {
+    font-size: 15pxx;
+    outline: none;
+    font-weight: 600;
+    color: #8d8e8f;
+    padding: 12px 12px;
+    width: 70%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: rgb(227, 222, 222);
+    box-shadow: 2px 3px 3px 0 px rgba(0, 0, 0, 0.3);
+    font-family: 'Raleway', sans-serif;
+}
+
+.reservation input[type="text"] {
+    font-size: 15px;
+    outline:none;
+    font-weight: 600;
+    color: #8d8e8f;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090b0d;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090b0d;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: #13161b;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+    font-family: 'Raleway', sans-serif;
+}
+
+.reservation input[type="text"]:hover {
+    box-shadow: 0, 0, 18px rgba(100, 65, 0, 0.8);
+}
+
 .form-spacer {
-    padding: 10px 39px;
+    padding: 5px 39px;
 }
 
 .terms {
-    margin: 35px 100px;
-    padding-right: 40px;
+    margin: 0px 5% 0 0;
+    margin-top: 3%;
+    padding-top: 5px;
     font-size: 14px;
     line-height: 5px;
     color: #000;
@@ -271,9 +315,9 @@ section {
     outline: none;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    margin: 10px 30px;
-    padding: 5px 0px;
-    width: 40%;
+    margin: 10px 3%;
+    /* padding: 7px 0px; */
+    width: 25%;
     font-size: 18px;
     transition: border-color 0.3s color 0,3s background-color 0.3s;
     border-radius: 7px;
