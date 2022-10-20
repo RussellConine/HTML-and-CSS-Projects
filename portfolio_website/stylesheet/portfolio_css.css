@@ -1,0 +1,132 @@
+/***** GENERAL STYLING *****/
+/* Body */
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ---------------------------------------------
+        NAVBAR          
+--------------------------------------------- */
+.Navbar {
+    overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
+    background-color: black; /* This colors the navbar black */
+    position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
+    top: 0; /* This ensures no space is displayed above the navbar */
+    width: 100%; /* This makes the navbar span the entire width of the page */
+    z-index: 1; /* This ensures other elements don't display over the navbar */
+    -webkit-animation: moveNav 2s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
+    animation: moveNav 2s; /* This applies the moveNav animation for all other browsers */
+    z-index: 1;
+}
+
+/* moveNav animation effect for moving the nav bar in from the left of the screen */
+@keyframes moveNav {
+    from {top: -5vw;} /* The navbar is starting off screen to the left */
+    to {top: 0vw;} /* This moves the navbar into place on the screen */
+}
+
+/* Navbar links */
+.Navbar a {
+    float: left; /* This specifies that the text floats on the left on the navbar */
+    display: block; /* This ensures that other text will be displayed on the same line or row, instead of a new line */
+    color: white; /* This is the font color for text on our navbar */
+    padding: 14px 8px; /* This adds padding around our text */
+    text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
+    font-size: 20px; /* This specifies the font size for text on our navbar */
+    text-align: center; /* This centers the text within its container */
+    position: relative; /*This sets the text relative to its normal positioning, allowing us to use the animation below*/
+    -webkit-animation: moveNavText 2s; /* Animation for Safari 4.0 - 8.0 */
+    animation: moveNavText 2s; /* Applies the moveNavText animation for 5.75s */
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    margin-left: 2px;
+}
+
+/* moveNavText animation effect for moving the navbar text from above the view to the navbar */
+@keyframes moveNavText {
+    from {top: -5vw;} /* This sets the navbar text 100% above the viewport */
+    to {top: 0vw;} /* This lowers the navbar text onto the navbar */
+}
+
+/* Screens 576px and smaller will display navbar links equally distributed */
+@media screen and (max-width: 576px) {
+    .Navbar a{
+        width: 25%; /* This makes each link take up 1/4 of the navbar */
+        font-size: 12px;
+    }
+}
+
+/* Navbar hover effects */
+.Navbar a:hover {
+    background-color: rgba(27, 105, 16, 0.8); /* Defines the background color that will display when you hover over the link */
+    color: rgb(196, 196, 196); /* This defines the font color that will display when navbar a elements are hovered over */
+    font-weight: bold; /*This makes the text on the navbar bold when hovered over */
+    transition: ease-out 0.1s;
+}
+
+/* Create invisble display block to space out links so they don't shift/jiggle on hover  */
+.Navbar a::before { 
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* Navbar home button */
+.Navbar a.active { /* This targets the a element on the navbar with the "active" class */
+    background-color: rgba(169, 169, 169, 0.5);
+}
+
+/* Navbar home button */
+.Navbar a.active:hover {
+    background-color: rgb(19, 148, 19);
+    color: rgb(247, 247, 247);
+}
+
+/* ---------------------------------------------
+        END NAVBAR          
+--------------------------------------------- */
+
+
+
+/* ---------------------------------------------
+        HOME        
+--------------------------------------------- */
+
+#Home {
+    background: url(../images/cedars.jpg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: 300px;
+    position: relative;
+    /* border: solid red; */
+}
+
+.Main_Header {
+    /* border: solid blue; */
+    width: 50%;
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);       /*center horizontally and vertically*/
+    text-align: center;
+    color: white;
+    font-variant: small-caps;
+    font-size: x-large;
+}
+
+
+
+

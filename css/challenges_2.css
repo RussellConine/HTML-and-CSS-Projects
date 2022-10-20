@@ -11,6 +11,7 @@
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     left: 0;
+    z-index: 1;
 }
 
 /* Links inside the navbar */
@@ -86,3 +87,26 @@
 .image:hover {
     opacity: 0.3;
 }
+
+.vid {
+    left: 0;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    p {
+      color: blue;
+    }
+  }
