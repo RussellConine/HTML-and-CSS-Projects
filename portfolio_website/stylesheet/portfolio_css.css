@@ -34,13 +34,13 @@ body {
     color: white; /* This is the font color for text on our navbar */
     padding: 14px 8px; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
-    font-size: 20px; /* This specifies the font size for text on our navbar */
+    font-size: 18px; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /*This sets the text relative to its normal positioning, allowing us to use the animation below*/
     -webkit-animation: moveNavText 2s; /* Animation for Safari 4.0 - 8.0 */
     animation: moveNavText 2s; /* Applies the moveNavText animation for 5.75s */
     border-radius: 5px;
-    margin-top: 5px;
+    margin-top: 3px;
     margin-bottom: 3px;
     margin-left: 2px;
 }
@@ -128,5 +128,26 @@ body {
 }
 
 
+/* ---------------------------------------------
+        COLUMNS        
+--------------------------------------------- */
 
+.Column_1 {
+    float: left;
+    width: 50%; /* This ensures the column takes up half of the page width */
+    padding: 10px;
+    padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
+    height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
+}
+
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #4d4d4d;
+}
 
