@@ -185,29 +185,6 @@ footer {
         COLUMNS        
 --------------------------------------------- */
 
-* { /* The asterisk is a universal selector that applies this effect to all elements on the page */
-    box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
-} 
-
-.Column_2 {
-    float: left;
-    width: 50%; /* This ensures the column takes up half of the page width */
-    padding: 10px;
-    padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
-    height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
-    background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
-}
-
-
-.Column_2 {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    padding-top: 1.9%;
-    height: 400px;
-    background-color: #4d4d4d;
-}
-
 /***** TABLE STYLING -  this section covers the styling of the columns and rows within the table *****/
 * { /* The asterisk is a universal selector that applies this effect to all elements on the page */
     box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
@@ -229,7 +206,6 @@ footer {
         overflow: auto;
     }
 }
-
 
 .Column_2 {
     float: left;
