@@ -10,5 +10,5 @@ Projects for Tech Academy HTML and CSS Projects
 ### Bootstrap Website
 [This webpage](https://github.com/RussellConine/HTML-and-CSS-Projects/tree/main/bootstrap4_project) uses a Bootstrap Grid and bootstrap Cards to display a multisection webpage. It uses Boostrap, HTML, and CSS.
 
-### Bootstrap Website
-[This webpage](https://github.com/RussellConine/HTML-and-CSS-Projects/tree/main/portfolio_website) contains the first (non-live) iteration of my portfolio website. It uses css image effects, transition effects, and media queries. It uses HTML and CSS.
+### Portfolio Website Draft
+[This webpage](https://github.com/RussellConine/HTML-and-CSS-Projects/tree/main/portfolio_website) contains the draft (non-live) iteration of my portfolio website. It uses css image effects, transition effects, and media queries. It uses HTML and CSS.
