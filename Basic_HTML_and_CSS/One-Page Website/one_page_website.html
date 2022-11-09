@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Mt. Hood</title> 
         <link rel="stylesheet" href="./css/one_page_website.css">
+        <script src="./js/one_page_website.js" defer></script>
     </head>
     <body>
 
@@ -31,7 +32,7 @@
                 <!-- PHOTO CONTAINER: FALL -->
                 <div class="photo-container">
                     <p>Fall</p>
-                    <div class="photo">
+                    <div class="photo cursor hover-shadow" onclick="openModal();currentSlide(1)">
                         <img src="https://images.fineartamerica.com/images-medium-large-5/mt-hood-in-autumn-ed-cooper-photography.jpg" alt="Mount Hood in Fall"> 
                         <div class="photo-overlay">
                             <!-- <h3 class="white-head">Click to </h3> -->
@@ -43,8 +44,8 @@
                 <!-- PHOTO CONTAINER: WINTER -->
                 <div class="photo-container">
                     <p>Winter</p>
-                    <div class="photo">
-                        <img src="https://oregonisforadventure.com/wp-content/uploads/2022/02/timberline-lodge-mount-hood-1024x681.jpeg" alt="<Mt. Hood in Winter>"> 
+                    <div class="photo cursor hover-shadow" onclick="openModal();currentSlide(2)">
+                        <img src="https://oregonisforadventure.com/wp-content/uploads/2022/02/timberline-lodge-mount-hood-1024x681.jpeg" alt="Mount Hood in Winter"> 
                         <div class="photo-overlay">
                             <!-- <h3 class="white-head">Click to Enlarge</h3> -->
                         </div>
@@ -55,8 +56,9 @@
                 <!-- END PHOTO CONTAINER: SPRING -->
                 <div class="photo-container">
                     <p>Spring</p>
-                    <div class="photo">
-                        <img src="https://www.daynalawphotography.com/wp-content/uploads/2017/06/Mt-Hood-Flowers.jpg" alt="mountain"> 
+                    <div class="photo cursor hover-shadow" onclick="openModal();currentSlide(3)">
+                        <img src="https://www.daynalawphotography.com/wp-content/uploads/2017/06/Mt-Hood-Flowers.jpg"
+                        alt="Mount Hood in Spring" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"> 
                         <div class="photo-overlay">
                             <!-- <h3 class="white-head">Click to Enlarge</h3> -->
                         </div>
@@ -67,8 +69,9 @@
                 <!-- PHOTO CONTAINER: SUMMER -->
                 <div class="photo-container">
                     <p>Summer</p>
-                    <div class="photo">
-                        <img src="https://ewscripps.brightspotcdn.com/dims4/default/734fc62/2147483647/strip/true/crop/1280x720+0+0/resize/1280x720!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F8a%2Ff1%2F0abd442544a3b312d40bbcb016a8%2Fsummer-skiing.png" alt="mountain"> 
+                    <div class="photo cursor hover-shadow" onclick="openModal();currentSlide(4)">
+                        <img src="https://ewscripps.brightspotcdn.com/dims4/default/734fc62/2147483647/strip/true/crop/1280x720+0+0/resize/1280x720!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F8a%2Ff1%2F0abd442544a3b312d40bbcb016a8%2Fsummer-skiing.png" 
+                        alt="Mount Hood in Summer" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"> 
                         <div class="photo-overlay">
                             <!-- <h3 class="white-head">Click to Enlarge</h3> -->
                         </div>
@@ -77,6 +80,49 @@
                 <!-- END PHOTO CONTAINER: SUMMER -->
             </div>
         </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="https://images.fineartamerica.com/images-medium-large-5/mt-hood-in-autumn-ed-cooper-photography.jpg" style="width:20%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="https://oregonisforadventure.com/wp-content/uploads/2022/02/timberline-lodge-mount-hood-1024x681.jpeg" style="width:20%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="https://www.daynalawphotography.com/wp-content/uploads/2017/06/Mt-Hood-Flowers.jpg" style="width:20%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="https://ewscripps.brightspotcdn.com/dims4/default/734fc62/2147483647/strip/true/crop/1280x720+0+0/resize/1280x720!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F8a%2Ff1%2F0abd442544a3b312d40bbcb016a8%2Fsummer-skiing.png" style="width:20%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="https://images.fineartamerica.com/images-medium-large-5/mt-hood-in-autumn-ed-cooper-photography.jpg" style="width:100%" onclick="currentSlide(1)" alt="Mount Hood in Fall">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://oregonisforadventure.com/wp-content/uploads/2022/02/timberline-lodge-mount-hood-1024x681.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Mount Hood in Winter">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://www.daynalawphotography.com/wp-content/uploads/2017/06/Mt-Hood-Flowers.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mount Hood in Spring">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://ewscripps.brightspotcdn.com/dims4/default/734fc62/2147483647/strip/true/crop/1280x720+0+0/resize/1280x720!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F8a%2Ff1%2F0abd442544a3b312d40bbcb016a8%2Fsummer-skiing.png" style="width:100%" onclick="currentSlide(4)" alt="Mount Hood in Summer">
+                </div>
+            </div>
+        </div>
+          
         <!-- END GALLERY -->
 
         <!-- VIDEO -->
